@@ -1,0 +1,2 @@
+SELECT a.name,a.cat_name,b.goods_name
+FROM shop.brand a CROSS JOIN shop.goods b;

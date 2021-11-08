@@ -1,0 +1,7 @@
+SELECT BookName,Writer,Price
+FROM shop.bookinfo
+WHERE Price = 59.80
+UNION
+SELECT BookName,Writer,Price
+FROM shop.bookinfo_zerobasis
+WHERE Price = 69.80;
