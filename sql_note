@@ -21,8 +21,7 @@ WHERE condition
 AND|OR condition
 
 #ALTER TABLE	
-ALTER TABLE table_name 
-ADD column_name datatype         # 新增加一列
+ALTER TABLE table_name ADD column_name datatype         # 新增加一列
 例子:
 alter table actor
 add create_date datetime NOT NULL default '2020-10-01 00:00:00';
@@ -37,6 +36,9 @@ ADD birth_date date;      #类型是date
 alter table dd.persons
 add age int(10);
 
+# alter table_name a rename b     ---table name from a to b
+# alter table_name a modify dep varchar(30)  --- modify item type to varchar(30)
+# alter table_name a change depname dep varchar(30)   # change item name to dep
 
 # add primary key
 ALTER table dd.persons
